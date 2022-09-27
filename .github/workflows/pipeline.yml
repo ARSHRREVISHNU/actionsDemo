@@ -3,8 +3,9 @@ name: Java CI with Gradle
 #Events - When some something happens to the master branch
 #Workflow - current flow is the workflow file which will be triggered
 env:
-  owner: arshrrevishnu
-  repo:  actionsDemo
+  REPO_OWNER: arshrrevishnu
+  REPO_NAME:  actionsDemo
+  GITHUB_TOKEN: ${{secrets.TOKEN}}
 
 on: #Events
   repository_dispatch: 

@@ -1,4 +1,4 @@
-name: Java CI with Gradle
+name: actionsDemo
 
 #Events - When some something happens to the master branch
 #Workflow - current flow is the workflow file which will be triggered

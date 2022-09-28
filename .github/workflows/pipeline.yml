@@ -24,4 +24,15 @@ jobs: #Jobs
 
       - name: Build with Gradle
         run: ./gradlew build
+      - name: send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: Mail from actionsDemo2
+          to: shrrevishnu@gmail.com
+          from: shrrevishnu@gmail.com
+          body: Hi I am coming from ${{github.repository}}. The build was successful.
 

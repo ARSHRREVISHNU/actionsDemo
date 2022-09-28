@@ -32,6 +32,6 @@ jobs: #Jobs
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Mail from actionsDemo2
-          to: shrrevishnu@gmail.com
+          to: shrrevishnu@gmail.com, shrrevishnuar@testvagrant.com
           from: shrrevishnu@gmail.com
           body: Hi I am coming from ${{github.repository}}. The build was successful.

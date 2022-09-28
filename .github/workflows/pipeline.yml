@@ -13,7 +13,8 @@ jobs: #Jobs
     runs-on: macOs-latest # Runners
 
     steps: #Steps
-      - uses: actions/checkout@v3
+      - name: Checking out the code
+        uses: actions/checkout@v3
 
       - name: Set up JDK 18
         uses: actions/setup-java@v3 #User name/repo name@release version

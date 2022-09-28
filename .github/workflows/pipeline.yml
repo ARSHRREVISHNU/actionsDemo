@@ -2,16 +2,11 @@ name: actionsDemo
 
 #Events - When some something happens to the master branch
 #Workflow - current flow is the workflow file which will be triggered
-env:
-  REPO_OWNER: arshrrevishnu
-  REPO_NAME:  actionsDemo
-  GITHUB_TOKEN: ${{secrets.TOKEN}}
-
 on: #Events
-  repository_dispatch: 
-    types: [run_ping]
-
-
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 jobs: #Jobs
   build: #Job 1
 
